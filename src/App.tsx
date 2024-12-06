@@ -20,7 +20,7 @@ const products: Product[] = data.map((item) => ({
   ...item,
   quantity: 0,
   image: Object.keys(item.image).reduce((acc, key) => {
-    acc[key as keyof Product["image"]] = `../public/${
+    acc[key as keyof Product["image"]] = `//${
       item.image[key as keyof Product["image"]]
     }`;
     return acc;
