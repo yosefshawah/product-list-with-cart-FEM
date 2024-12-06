@@ -44,13 +44,13 @@ const CardItem: React.FC<CardItemProps> = ({ product }) => {
             <div className={styles.hoverContent}>
               <img
                 onClick={decrement}
-                src="assets/images/icon-decrement-quantity.svg"
+                src="/assets/images/icon-decrement-quantity.svg"
                 alt="Decrement"
               />
               <span className={styles.amount}>{quantity}</span>
               <img
                 onClick={increment}
-                src="assets/images/icon-increment-quantity.svg"
+                src="/assets/images/icon-increment-quantity.svg"
                 alt="Increment"
               />
             </div>
@@ -58,7 +58,7 @@ const CardItem: React.FC<CardItemProps> = ({ product }) => {
             // Render default content
             <span>
               <img
-                src="assets/images/icon-add-to-cart.svg"
+                src="/assets/images/icon-add-to-cart.svg"
                 alt="Add to cart icon"
               />
               Add to Cart

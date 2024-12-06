@@ -38,7 +38,7 @@ const Cart = () => {
                 </span>
               </div>
               <img
-                src="assets/images/icon-remove-item.svg"
+                src="/assets/images/icon-remove-item.svg"
                 onClick={() => removeItem(item.name)}
               />
             </li>
@@ -59,7 +59,7 @@ const Cart = () => {
 
       {/* Carbon neutral */}
       <div className={styles.carbonNeutral}>
-        <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+        <img src="/assets/images/icon-carbon-neutral.svg" alt="" />
         <span>This is a carbon-neutral delivery</span>
       </div>
 
