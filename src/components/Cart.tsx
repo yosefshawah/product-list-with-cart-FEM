@@ -2,6 +2,7 @@ import styles from "./Cart.module.css";
 import useCartStore from "../stores/cartStore";
 //git
 const Cart = () => {
+  // @ts-ignore
   const { cartItems, removeItem } = useCartStore();
 
   const getTotalQuantity = () => {
