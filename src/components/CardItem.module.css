@@ -1,0 +1,54 @@
+.item img {
+  border-radius: 10px 10px 0 0;
+  display: inline-block;
+  padding-right: 0.2rem;
+}
+
+.h2 {
+  font-size: 1rem;
+}
+.item > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.button {
+  margin: 0 auto;
+  width: 80%;
+  padding: 0.25rem 0.5rem;
+  background-color: #fffffd;
+  border-radius: 1rem;
+  border: 2px solid #ccc6c6;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  position: relative;
+  bottom: 1rem;
+  overflow: visible; /* Ensures hover content isn't clipped */
+}
+
+.hoveredButton {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #b94525; /* Change background on hover */
+  border-color: #a1391e; /* Optional: change border color */
+  color: white; /* Change text color */
+}
+
+.hoverContent {
+  display: flex; /* Ensure horizontal layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 0.5rem; /* Add spacing between elements */
+}
+
+.amount {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.hoveredButton img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
