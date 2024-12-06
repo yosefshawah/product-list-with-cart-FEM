@@ -1,14 +1,27 @@
 import styles from "./Cart.module.css";
 import useCartStore from "../stores/cartStore";
-//git
+interface CartItem {
+  name: string;
+  price: number;
+  quantity: number;
+}
+
+// Define the store's type for cart items and actions
+interface CartStore {
+  cartItems: CartItem[];
+  removeItem: (name: string) => void;
+}
+
 const Cart = () => {
-  // @ts-ignore
-  const { cartItems, removeItem } = useCartStore();
+  // Use explicit typing for the store
+  const { cartItems, removeItem }: CartStore = useCartStore();
 
-  const getTotalQuantity = () => {
-    return cartItems.reduce((total, item) => total + item.quantity, 0);
+  const getTotalQuantity = (): number => {
+    return cartItems.reduce(
+      (total: number, item: CartItem) => total + item.quantity,
+      0
+    );
   };
-
   return (
     <div className={styles.cart}>
       <h1>Your Cart ({getTotalQuantity()})</h1>
